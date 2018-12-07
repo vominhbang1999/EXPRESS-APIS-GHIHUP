@@ -1,0 +1,25 @@
+extends layout
+
+block content
+	h1= title
+	table.table.table-bordered
+		thead
+			tr 
+				th Username
+				th Create
+				th Email
+				th Link Hình Ảnh
+		tbody
+			- for(var user in data)
+				tr 
+					td
+						a(href="/user/"+data[user].key)=data[user].username
+					td=data[user].createdAt
+					td=var a =data[user].email
+					td=data[user].avatar
+					td=data[user].avatar2
+					td=data[user].avatar3
+					td=data[user].avatar4
+					td=data[user].avatar5
+					td=data[user].avatar6
+					td=data[user].avatar7
